@@ -1,7 +1,6 @@
-from mailbox import NotEmptyError
 import re
-from this import d
 erro = ""
+formato_telefone = ""
 try:
     nome = input("Digite seu nome: ")
 
@@ -11,9 +10,21 @@ try:
     
     celular = input("Digite seu numero de celular: ")
 
-    if re.search("\D", celular) or len(celular) > 14:
-        erro = "O numero de celular pode conter apenas números"
+    if re.search("\D", celular):
+        erro = "Não é permitido letras no numero"
         raise ValueError
-    print(f"Nome: {nome} Numero: ")
+        
+    if len(celular) > 11:
+        erro = "O numero ultrapassa a quantidade permitida"
+        raise ValueError
+            
+    else:
+        formato_telefone = re.sub(r"^(\d{2})(\d{5})(\d{4})$", r"(\1) \2-\3", celular)
+
+    print(f"Nome: {nome} Numero: {formato_telefone}")
+    
+
 except ValueError:
     print(erro)
+finally:
+    print("Fim do programa")
