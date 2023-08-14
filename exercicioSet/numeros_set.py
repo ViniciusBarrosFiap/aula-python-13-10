@@ -14,6 +14,7 @@ else:
 
 maior_numero = 0
 numeros.remove(0)
+print(numeros)
 while len(numeros) < 10:
     try:
         if tipo_numero_usuario == "REAL":
@@ -23,10 +24,14 @@ while len(numeros) < 10:
                if i >= maior_numero:
                    maior_numero = i
 
-
-        elif tipo_numero_usuario == "I":
+        elif tipo_numero_usuario == "INTEIRO":
             numeros_usuario = int(input("Digite um numero INTEIRO: "))
             numeros.add(numeros_usuario)
+            for i in numeros:
+               if i >= maior_numero:
+                   maior_numero = i
+        else:
+            raise ValueError
     except ValueError:
         print("Digite um valor válido")
 
