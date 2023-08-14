@@ -1,3 +1,4 @@
+#RM97824 - Vinicius Oliveira de Barros
 numeros = {0}
 tipo_numero_usuario = input('''Escolha um tipo de número para digitar\n
 "R" para numeros REAIS

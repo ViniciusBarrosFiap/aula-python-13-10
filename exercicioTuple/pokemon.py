@@ -1,3 +1,4 @@
+#RM97824 - Vinicius Oliveira de Barros
 def verificaPokemon(pokemons, tipo):
     contador = 0
     pokemons_tipo = []
