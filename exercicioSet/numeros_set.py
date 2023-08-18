@@ -1,5 +1,6 @@
 #RM97824 - Vinicius Oliveira de Barros
 numeros = {0}
+maior_numero = 0
 tipo_numero_usuario = input('''Escolha um tipo de número para digitar\n
 "R" para numeros REAIS
 "I" para números INTEIROS\n''').upper()
@@ -13,8 +14,7 @@ elif tipo_numero_usuario == "I":
 else:
     print("Escolha um tipo de número válido")
 
-maior_numero = 0
-numeros.remove(0)
+numeros.descart(0)
 print(numeros)
 while len(numeros) < 10:
     try:
