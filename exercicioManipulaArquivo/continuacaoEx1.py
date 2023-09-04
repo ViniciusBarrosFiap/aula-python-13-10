@@ -1,3 +1,5 @@
+#RM97824 - Vinicius Oliveira de Barros
+
 try:
     fraseNova = input("Digite outro ditado popular: ")
     f = open("exercicioManipulaArquivo/exercicio1.txt", "a", encoding="utf-8")
