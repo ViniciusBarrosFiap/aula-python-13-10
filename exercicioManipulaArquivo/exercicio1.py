@@ -7,5 +7,5 @@ try:
     f = open("exercicioManipulaArquivo/exercicio1.txt", "r", encoding="utf-8")
     print("conteudo escrito:\n" + f.read())
     f.close()
-except:
+except FileNotFoundError:
     print("Arquivo não existe")
