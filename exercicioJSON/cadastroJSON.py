@@ -1,6 +1,5 @@
 #Rm97824 - Vinicius Barros
 import json
-usuario = {}
 continuar = "sim"
 usuario = {}
 while continuar == "sim":
