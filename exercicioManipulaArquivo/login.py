@@ -10,7 +10,7 @@ for linha in arquivo:
 
 nomeDeUsuario = parte[1]
 senhaUsuario = parte[2]
-
+arquivo.close()
 if user == nomeDeUsuario and senha == senhaUsuario:
     print("Acesso concedido")
 elif user != nomeDeUsuario and senha == senhaUsuario:
