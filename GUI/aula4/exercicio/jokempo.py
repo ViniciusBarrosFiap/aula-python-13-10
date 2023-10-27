@@ -22,7 +22,8 @@ valor = ["pedra", "papel", "tesoura"]
 
 for i in range(0, 3, 1):
     Radiobutton(container1, text=texto[i],indicatoron=False, value=valor[i], variable=escolha, width=15, anchor="w", padx=10, pady=5, bg="moccasin", font=fonte, command=muda_imagem).pack()
-
+rotuloJogador = Label(text="Jogador", bg="goldenrod", font=fonte)
+rotuloJogador.pack()
 imagemEsquerda = PhotoImage(file="jogo_img/tesoura.png")
 rotulo1 = Label(container2, padx=10, image=imagemEsquerda, bg="goldenrod")
 rotulo1.pack()
